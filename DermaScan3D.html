@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D OCT Skin Imaging & Therapy System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.1), transparent 70%);
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .section-title {
+            background: -webkit-linear-gradient(45deg, #0ea5e9, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700/50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400"><path d="M12 12.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 1 1-9 0Z"/><path d="M12 12.5C12 11 10.84 8 9 8s-3 3-3 4.5 1.16 4.5 3 4.5 3-3 3-4.5Z"/><path d="M12 8V7"/><path d="M12 18v-1"/><path d="M9 12.5H8"/><path d="M15 12.5h1"/><path d="M10.41 10.41 10 10"/><path d="M13.59 15.00_14 15.5"/><path d="M10.41 14.59 10 15"/><path d="M13.59 9.59 14 10"/></svg>
+                <span class="text-xl font-bold text-white">Dermascan 3D</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-sky-400 transition-colors">Features</a>
+                <a href="#technology" class="hover:text-sky-400 transition-colors">Technology</a>
+                <a href="#applications" class="hover:text-sky-400 transition-colors">Applications</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 text-white font-semibold px-5 py-2 rounded-lg transition-colors">Request a Demo</a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#features" class="block py-2 hover:text-sky-400">Features</a>
+            <a href="#technology" class="block py-2 hover:text-sky-400">Technology</a>
+            <a href="#applications" class="block py-2 hover:text-sky-400">Applications</a>
+            <a href="#contact" class="block py-2 hover:text-sky-400">Contact</a>
+            <a href="#contact" class="block mt-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold text-center px-5 py-2 rounded-lg">Request a Demo</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight text-white">
+                    Revolutionizing Skin Health:
+                    <span class="block bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-500">See Deeper, Treat Smarter.</span>
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-300">
+                    Introducing the future of dermatological care—an integrated 3D OCT imaging and Photodynamic Therapy system for unparalleled diagnostics and targeted, non-invasive treatment.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#features" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg transition-transform transform hover:scale-105">Learn More</a>
+                    <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold px-8 py-3 rounded-lg transition-transform transform hover:scale-105">Request a Demo</a>
+                </div>
+            </div>
+            <div class="container mx-auto px-6 mt-16">
+                 <div class="relative rounded-xl shadow-2xl shadow-sky-500/20 overflow-hidden">
+                    <img src="https://placehold.co/1200x600/111827/9ca3af?text=Dermascan+3D+System" 
+                         alt="3D OCT Skin Imaging System"
+                         class="w-full h-auto object-cover"
+                         onerror="this.onerror=null;this.src='https://placehold.co/1200x600/111827/ffffff?text=Image+Not+Available';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">An All-in-One Solution</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-gray-400">Our system integrates cutting-edge technologies to provide a comprehensive workflow from diagnosis to treatment.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-xl feature-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-500/20 mb-5">
+                            <i data-lucide="scan-search" class="text-sky-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Advanced 3D OCT Imaging</h3>
+                        <p class="text-gray-400">Utilizes non-harmful, near-infrared light to create high-resolution, cross-sectional 3D images of skin layers. Visualize lesion roots, collagen density, and skin thickness without invasive biopsies.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-xl feature-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-500/20 mb-5">
+                            <i data-lucide="zap" class="text-sky-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Targeted Photodynamic Therapy</h3>
+                        <p class="text-gray-400">Delivers precise, light-activated treatment using a proprietary Aza-BODIPY photosensitizer. Effectively targets abnormal cells and bacteria for acne, warts, and skin cancer with minimal side effects.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-xl feature-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-500/20 mb-5">
+                            <i data-lucide="brain-circuit" class="text-sky-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">AI-Powered Diagnostics</h3>
+                        <p class="text-gray-400">Our U-Net deep learning model automatically segments skin layers and identifies abnormalities from OCT scans. Provides objective, quantitative data to support clinical decisions and track treatment efficacy.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="p-8 rounded-xl feature-card">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-500/20 mb-5">
+                            <i data-lucide="hand" class="text-sky-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Ergonomic Handheld Probe</h3>
+                        <p class="text-gray-400">A lightweight, user-friendly handheld probe integrates both imaging and therapy delivery systems, streamlining the clinical workflow and enhancing patient comfort during procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section -->
+        <section id="technology" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Simple, Powerful Workflow</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-gray-400">From initial scan to targeted therapy in three seamless steps.</p>
+                </div>
+                <div class="relative">
+                    <!-- Connecting line -->
+                    <div class="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-700 -translate-y-1/2"></div>
+                    <div class="grid lg:grid-cols-3 gap-12 relative">
+                        <!-- Step 1 -->
+                        <div class="text-center p-6 bg-gray-900 rounded-xl border border-gray-700">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500/20 mx-auto mb-5 border-2 border-indigo-500">
+                                <span class="text-2xl font-bold text-indigo-400">1</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Scan & Image</h3>
+                            <p class="text-gray-400">Perform a quick, non-invasive 3D scan of the target area with the handheld probe to instantly capture detailed subsurface images.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="text-center p-6 bg-gray-900 rounded-xl border border-gray-700">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500/20 mx-auto mb-5 border-2 border-indigo-500">
+                                <span class="text-2xl font-bold text-indigo-400">2</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Analyze with AI</h3>
+                            <p class="text-gray-400">AI-powered software analyzes the OCT data in real-time, segmenting layers and highlighting abnormalities for a precise diagnosis.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="text-center p-6 bg-gray-900 rounded-xl border border-gray-700">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-indigo-500/20 mx-auto mb-5 border-2 border-indigo-500">
+                                <span class="text-2xl font-bold text-indigo-400">3</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Deliver Targeted Therapy</h3>
+                            <p class="text-gray-400">Based on the AI-assisted diagnosis, use the same device to deliver focused Photodynamic Therapy directly to the affected tissue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Applications Section -->
+        <section id="applications" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold section-title">Versatile Clinical Applications</h2>
+                        <p class="mt-4 text-gray-400">Designed for a wide range of dermatological and aesthetic practices, our system addresses numerous skin conditions with superior accuracy and efficacy.</p>
+                        <div class="mt-8 grid grid-cols-2 gap-6">
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="text-green-400 w-5 h-5 mt-1 flex-shrink-0"></i>
+                                <span>Dermatology Clinics</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="text-green-400 w-5 h-5 mt-1 flex-shrink-0"></i>
+                                <span>Aesthetic & Beauty Centers</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="text-green-400 w-5 h-5 mt-1 flex-shrink-0"></i>
+                                <span>Hospitals</span>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-lucide="check-circle" class="text-green-400 w-5 h-5 mt-1 flex-shrink-0"></i>
+                                <span>Clinical Research</span>
+                            </div>
+                        </div>
+                         <p class="mt-6 font-semibold text-white">Effective for treating:</p>
+                        <ul class="mt-2 text-gray-400 list-disc list-inside space-y-1">
+                            <li>Superficial Basal Cell Carcinoma (sBCC)</li>
+                            <li>Actinic Keratosis & Bowen's Disease</li>
+                            <li>Acne Vulgaris (moderate to severe)</li>
+                            <li>Cutaneous Warts</li>
+                            <li>Aesthetic concerns like freckles and blemishes</li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <img src="https://placehold.co/600x450/1f2937/4f46e5?text=Clinical+Application" 
+                             alt="Doctor using the device on a patient"
+                             class="rounded-xl shadow-lg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x450/1f2937/ffffff?text=Image+Not+Available';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold section-title">Backed by Leading Research</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-gray-400">Developed by a multidisciplinary team of experts at Suranaree University of Technology, pushing the boundaries of medical innovation.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+                    <!-- Team Member -->
+                    <div class="flex flex-col items-center">
+                        <img class="w-24 h-24 rounded-full mb-3 object-cover" src="https://placehold.co/96x96/374151/e5e7eb?text=PM" alt="Dr. Panomsak Meemon">
+                        <h4 class="font-semibold text-white">Dr. Panomsak Meemon</h4>
+                        <p class="text-sm text-sky-400">System Design</p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="flex flex-col items-center">
+                        <img class="w-24 h-24 rounded-full mb-3 object-cover" src="https://placehold.co/96x96/374151/e5e7eb?text=AK" alt="Dr. Anyanee Kamkaew">
+                        <h4 class="font-semibold text-white">Dr. Anyanee Kamkaew</h4>
+                        <p class="text-sm text-sky-400">Photosensitizer Dev.</p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="flex flex-col items-center">
+                        <img class="w-24 h-24 rounded-full mb-3 object-cover" src="https://placehold.co/96x96/374151/e5e7eb?text=IF" alt="Dr. Ittipon Fongkaew">
+                        <h4 class="font-semibold text-white">Dr. Ittipon Fongkaew</h4>
+                        <p class="text-sm text-sky-400">AI & Data Science</p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="flex flex-col items-center">
+                        <img class="w-24 h-24 rounded-full mb-3 object-cover" src="https://placehold.co/96x96/374151/e5e7eb?text=WS" alt="Dr. Wutthipong Sriratthanarak">
+                        <h4 class="font-semibold text-white">Dr. Wutthipong S.</h4>
+                        <p class="text-sm text-sky-400">MD, Dermatology</p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="flex flex-col items-center">
+                        <img class="w-24 h-24 rounded-full mb-3 object-cover" src="https://placehold.co/96x96/374151/e5e7eb?text=WT" alt="Dr. Wanvisa Talataisong">
+                        <h4 class="font-semibold text-white">Dr. Wanvisa Talataisong</h4>
+                        <p class="text-sm text-sky-400">Optical Systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="bg-gray-800 rounded-2xl p-8 md:p-12 lg:p-16 lg:flex lg:items-center lg:justify-between">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-white">Ready to Elevate Your Practice?</h2>
+                        <p class="mt-4 text-gray-300">Contact us for a detailed consultation or to schedule a live demo of the Dermascan 3D system. Discover how our technology can transform your patient care.</p>
+                    </div>
+                    <div class="lg:w-1/2 mt-8 lg:mt-0">
+                        <form action="#" method="POST" class="space-y-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 bg-gray-700 rounded-lg border border-gray-600 focus:ring-2 focus:ring-sky-500 focus:outline-none text-white" required>
+                            <input type="email" placeholder="Your Email" class="w-full p-3 bg-gray-700 rounded-lg border border-gray-600 focus:ring-2 focus:ring-sky-500 focus:outline-none text-white" required>
+                            <input type="text" placeholder="Clinic / Hospital Name" class="w-full p-3 bg-gray-700 rounded-lg border border-gray-600 focus:ring-2 focus:ring-sky-500 focus:outline-none text-white">
+                            <textarea placeholder="Your Message" rows="4" class="w-full p-3 bg-gray-700 rounded-lg border border-gray-600 focus:ring-2 focus:ring-sky-500 focus:outline-none text-white"></textarea>
+                            <button type="submit" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-semibold p-3 rounded-lg transition-colors">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 border-t border-gray-700/50">
+        <div class="container mx-auto px-6 py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center space-x-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400"><path d="M12 12.5a4.5 4.5 0 1 1 9 0 4.5 4.5 0 1 1-9 0Z"/><path d="M12 12.5C12 11 10.84 8 9 8s-3 3-3 4.5 1.16 4.5 3 4.5 3-3 3-4.5Z"/><path d="M12 8V7"/><path d="M12 18v-1"/><path d="M9 12.5H8"/><path d="M15 12.5h1"/><path d="M10.41 10.41 10 10"/><path d="M13.59 15.00_14 15.5"/><path d="M10.41 14.59 10 15"/><path d="M13.59 9.59 14 10"/></svg>
+                        <span class="text-xl font-bold text-white">Dermascan 3D</span>
+                    </a>
+                     <p class="text-gray-400 mt-2">An innovation from Suranaree University of Technology.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase">Resources</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-4"><a href="#features" class="hover:underline">Features</a></li>
+                            <li><a href="#technology" class="hover:underline">Technology</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase">Follow us</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-4"><a href="#" class="hover:underline">LinkedIn</a></li>
+                            <li><a href="#" class="hover:underline">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-100 uppercase">Legal</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-4"><a href="#" class="hover:underline">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-400 sm:text-center">© 2025 <a href="#" class="hover:underline">Dermascan 3D™</a>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
