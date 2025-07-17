@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LASER Lab | Suranaree University of Technology</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      color: #1e293b;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .intro {
+      padding: 2rem;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+    .card h3 {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      color: #0f172a;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0f172a;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LASER Lab</h1>
+    <p>Light and Applied Spectroscopy Engineering Research Lab</p>
+    <p>Suranaree University of Technology</p>
+  </header>
+
+  <section class="intro">
+    <p>Welcome to the LASER Lab at Suranaree University of Technology. Our lab focuses on cutting-edge research in optical imaging, spectroscopy, and photonics-based diagnostics and therapy systems. Explore our latest technology platforms below.</p>
+  </section>
+
+  <section class="grid">
+    <a class="card" href="AquaScan3D.html">
+      <img src="https://i.ibb.co/4fmDxwS/oct-aqua.png" alt="AquaScan3D">
+      <h3>AquaScan 3D</h3>
+      <p>Portable OCT for Aquatic Toxicology and Fish Health Monitoring</p>
+    </a>
+    <a class="card" href="DermaScan3D.html">
+      <img src="https://i.ibb.co/xFt9dBs/oct-derma.png" alt="DermaScan3D">
+      <h3>DermaScan 3D</h3>
+      <p>Advanced OCT & PDT System for Dermatological Imaging and Treatment</p>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 LASER Lab, Suranaree University of Technology
+  </footer>
+</body>
+</html>
